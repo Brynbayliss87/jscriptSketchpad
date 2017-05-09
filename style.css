@@ -1,8 +1,17 @@
+button{
+  height: 40px;
+  width: 60px;
+  background-color: #d8d8d8;
+  float: left;
+  margin-left: 650px;
+}
 #wrapper{
-  height: 640px;
-  width: 640px;
-  border: 1px solid black;
-  margin: auto;
+  height: 800px;
+  width: 850px;
+  margin-left: 250px;
+  margin-top: 40px;
+  float: left;
+  background-color: # d9dff9;
 }
 .square{
   box-sizing: border-box;
@@ -11,9 +20,4 @@
   border: 1px solid white;
 }
 
-button{
-  height: 40px;
-  width: 60px;
-  background-color: #d8d8d8;
-  float: left;
-  margin-left: 600px;      
+
