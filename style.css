@@ -14,10 +14,12 @@ button{
   background-color: # d9dff9;
 }
 .square{
-  box-sizing: border-box;
   display: inline-block;
   background-color: #d8d8d8;
   border: 1px solid white;
+  height: 52px;
+  width: 53px;
 }
+
 
 
