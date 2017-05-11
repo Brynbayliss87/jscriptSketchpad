@@ -4,11 +4,12 @@ button{
   background-color: #d8d8d8;
   float: left;
   margin-left: 650px;
+  border-radius: 5px;
 }
 #wrapper{
-  height: 800px;
-  width: 850px;
-  margin-left: 250px;
+  height: 640px;
+  width: 640px;
+  margin-left: 375px;
   margin-top: 40px;
   float: left;
   background-color: # d9dff9;
@@ -19,6 +20,7 @@ button{
   border: 1px solid white;
   height: 52px;
   width: 53px;
+  border-radius: 5px;
 }
 
 
