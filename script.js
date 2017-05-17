@@ -23,6 +23,7 @@ var resizeGrid = function(newSize){
   $(".square").remove()
   makeWrapper(newSize);
   $(".square").outerHeight(640/newSize);
+  $(".square").outerWidth(640/newSize);
 }
 
 $("button").click(function(){
