@@ -16,20 +16,12 @@ var makeWrapper = function(size){
 
 
 var resizeGrid = function(newSize){
-  $(".square").remove()
-  makeWrapper(newSize);
   var squareSize = 640/(newSize*1.1);
   $(".square").css({
   "width":squareSize+"px",
   "height":squareSize+"px",
   "border-width":squareSize*0.05+"px",
   })
-
-  $("button").click(function(){
-  size = prompt("Set the size, pick a number between 1 and 64")
-  resizeGrid(size);
-  makeWrapper(size);
-  });
   $(".square").on("mouseenter",function(){
     $(this).addClass("trail");
   });
@@ -38,4 +30,18 @@ var resizeGrid = function(newSize){
 
 
 
+var resizeButton = function(){
+  $(".square").remove(); 
+  size = prompt("Set the size, pick a number between 1 and 64")
+  $("button").on("mouseenter",function(){
+    $(this).css({
+    "background-color":"#686882"});
+  });
+  $("button").on("mouseleave", function(){
+    $(this).css({
+      "background-color":"#d8d8d8"});
+  });
+  makeWrapper(size);
+  resizeGrid(size);
+};
 
