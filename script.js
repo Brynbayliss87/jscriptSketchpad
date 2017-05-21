@@ -33,6 +33,13 @@ var resizeGrid = function(newSize){
 var resizeButton = function(){
   $(".square").remove(); 
   size = prompt("Set the size, pick a number between 1 and 64")
+  if (size > 64){
+  alert("Number too high, default value set");
+  size = 16} else if (size < 1){
+  alert("Number too low, default value set");
+  size = 16} else if (isNaN(size)){
+  alert("Thats not a number! Default value set");
+  size = 16};
   $("button").on("mouseenter",function(){
     $(this).css({
     "background-color":"#686882"});
